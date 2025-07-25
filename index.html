@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <style>
+
+        @font-face {
+            font-family: 'Bitter';
+            src: url(assets/fonts/Bitter/Bitter-VariableFont_wght.ttf);
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'Raleway';
+            src: url(assets/fonts/Raleway/Raleway-VariableFont_wght.ttf);
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        * {
+            margin: 0px;
+            padding: 0px;
+            font-family: Helvetica, Arial, sans-serif;
+        }
+
+        body {
+            display: grid;
+            grid: 1fr / 1fr minmax(auto, 60ch) 1fr;
+            background: #FFDB58;
+        }
+
+        body .container {
+            grid-area: 1 / 2;
+        }
+
+        h1 {
+            font-family: 'Bitter', sans-serif;
+            font-size: 36px;
+        }
+
+        p, li a  {
+            font-family: 'Raleway', sans-serif;
+        }
+
+        .container {
+            display: flex;
+            flex-flow: column;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+
+        .introduction a {
+            text-decoration: none;
+        }
+
+        .alex-photo {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background: grey;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 10px;
+        }
+
+        .introduction {
+            display: flex;
+            height: auto;
+            width: auto;
+            justify-content: center;
+            flex-direction: row;
+        }
+
+        .introduction h1, .introduction p {
+            margin-left: 10px;
+        }
+
+        .introduction p {
+            margin-top: 5px;
+        }
+
+        .links {
+            margin-top: 40px;
+        }
+
+        .links * {
+            display: flex;
+            text-decoration: none;
+            list-style: none;
+            justify-content: space-around;
+        }
+
+        .container {
+            border: 5px solid black;
+            border-radius: 20px;
+            margin-top: 200px;
+            padding: 20px;
+            background: #FFF; 
+        }
+
+
+
+    </style>
+
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="introduction">
+            <img src="assets/images/alex-desert.png" alt="A picture of Alex." class="alex-photo">
+            <div class="intro-text">
+                <h1 class="hello">Hi! I'm Alex.</h1>
+                <p>I'm currently working on my PhD at Sydney Uni. I'm working on creating an online learning resource for <a href="">the Gudjal language</a>. Hopefully it will look a lot better than this.</p>
+            </div>
+        </div>
+
+        <div class="links">
+
+            <ul>
+                <li><a href="">About Me</a></li>
+                <li><a href="">Writing</a></li>
+                <li><a href="">Projects</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+
+        </div>
+
+    </div>  
+
+</body>
+</html>
